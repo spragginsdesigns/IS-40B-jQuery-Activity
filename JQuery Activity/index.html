@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+  <head>
+    <title>JQuery Activity 1</title>
+    <link rel="icon" type="image/x-icon" href="./favicon.ico/codeico.ico" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  </head>
+  <body>
+      <header>
+        <h1 class="header1">JQuery Contact Information Form</h1><br><br>
+    </header>
+    <span>
+        <img class="image1" src="./images/contact.png" width="150px" height="150px">
+    </span>
+        <p class="instructions">Please Provide Your Contact Information:</p><br><br>
+            <form id="main-form" action="">
+                First Name: <input type="text" id="fname">
+                Last Name: <input type="text" id="lname">
+                Phone Number: <input type="tel" id="pnumber" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                Email: <input type="text" id="email">
+                <input type="button" id="parse" value="Submit" onclick="parseUserData()">
+            </form>
+            <p>
+                <span id="display"></span>
+            </p>
+<footer>
+    Created By Austin Spraggins&copy;
+</footer>
+<script src="script.js"></script>
+  </body>
+</html>
